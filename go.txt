@@ -16,6 +16,7 @@ foundf
 georgysavva
 gocritic
 gofmt
+gofumpt
 goimports
 golangci
 golint

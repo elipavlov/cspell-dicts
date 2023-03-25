@@ -2,45 +2,39 @@
 
 ## How to Use
 
-1] Download it.
+1] Download it or pull the updates:
+
+```sh
+git clone https://github.com/elipavlov/cspell-dicts.git
+```
+
+or update:
+```sh
+cd ~/cspell-dicts && git pull origin main
+```
+
+
 
 2] Add dictionaries to your VS code settings.json:
 
-```
+```sh
 vim ~/Library/Application Support/Code/User/settings.json
 
 ```
 
 Insert dictionaries to the settings:
-```
-   [...]
-    "cSpell.dictionaryDefinitions": [
-        {
-            "name": "common",
-            "path": "/Users/me/cspell_dicts/common.txt"
-        },
-        {
-            "name": "pythonic",
-            "path": "/Users/me/cspell_dicts/python.txt"
-        },
-        {
-            "name": "go",
-            "path": "/Users/me/cspell_dicts/go.txt"
-        },
-        {
-            "name": "private",
-            "path": "/Users/me/cspell_dicts/private.txt"
-        },
-        {
-            "name": "ci",
-            "path": "/Users/me/cspell_dicts/ci.txt"
-        },
-    ],
+```json
+    [...]
+    "cSpell.customDictionaries": {
+        "common": {"name": "common", "path": "${userHome}/cspell-dicts/common.txt"},
+        "pythonic": {"name": "pythonic", "path": "${userHome}/cspell-dicts/python.txt"},
+        "go": {"name": "go", "path": "${userHome}/cspell-dicts/go.txt"},
+        "ci": {"name": "ci", "path": "${userHome}/cspell-dicts/ci.txt"},
+    },
     "cSpell.dictionaries": [
         "common",
         "pythonic",
         "go",
-        "private",
-        "ci"
+        "ci",
     ],
 ```
