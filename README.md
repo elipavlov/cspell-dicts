@@ -22,19 +22,30 @@ vim ~/Library/Application Support/Code/User/settings.json
 
 ```
 
-Insert dictionaries to the settings:
+Insert dictionaries to the settings.json:
 ```json
     [...]
+    "cSpell.language": "en,ru",
     "cSpell.customDictionaries": {
-        "common": {"name": "common", "path": "${userHome}/cspell-dicts/common.txt"},
-        "pythonic": {"name": "pythonic", "path": "${userHome}/cspell-dicts/python.txt"},
-        "go": {"name": "go", "path": "${userHome}/cspell-dicts/go.txt"},
-        "ci": {"name": "ci", "path": "${userHome}/cspell-dicts/ci.txt"},
+        "custom": true,
+        "common": {"name": "common", "path": "/path/to/cspell-dicts/common.txt"},
+        "pythonic": {"name": "pythonic", "path": "/path/to/cspell-dicts/python.txt"},
+        "go": {"name": "go", "path": "/path/to/cspell-dicts/go.txt"},
+        "ci": {"name": "ci", "path": "/path/to/cspell-dicts/ci.txt"},
     },
     "cSpell.dictionaries": [
         "common",
         "pythonic",
         "go",
         "ci",
-    ],
+    ]
 ```
+
+## How to add more exclusions
+
+```sh
+
+echo "StoreR" | tr '[:upper:]' '[:lower:]' >> go.txt
+```
+
+
