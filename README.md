@@ -18,7 +18,7 @@ cd ~/cspell-dicts && git pull origin main
 2] Add dictionaries to your VS code settings.json:
 
 ```sh
-vim ~/Library/Application Support/Code/User/settings.json
+vim ~/Library/Application\ Support/Code/User/settings.json
 
 ```
 
