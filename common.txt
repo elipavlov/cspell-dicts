@@ -100,6 +100,7 @@ minikube
 mkdir
 mock
 msecs
+msgp
 multiqueue
 mysql
 nameserver
@@ -139,6 +140,7 @@ repr
 reprs
 resizer
 restapi
+runtimes
 sapi
 serviceaccount
 sess

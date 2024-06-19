@@ -5,6 +5,7 @@ bbolt
 boltbrowser
 boltdb
 boltstorage
+brianvoe
 chattable
 copylocks
 ddtrace
@@ -18,6 +19,7 @@ foundf
 gavv
 georgysavva
 gocritic
+gofakeit
 gofmt
 gofumpt
 goimports
@@ -43,10 +45,12 @@ ifacemaker
 ineffassign
 infof
 jackc
+jetstream
 jmoiron
 kelseyhightower
 logrus
 managerer
+marshal
 messagef
 nakedret
 nats
@@ -76,6 +80,7 @@ stylecheck
 tebeka
 termbox
 unconvert
+unmarshal
 valuesf
 varcheck
 warningf
